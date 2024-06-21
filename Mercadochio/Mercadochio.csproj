@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91FE4583-9FCA-449D-823A-B2B129C2039E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mercadochio</RootNamespace>
+    <AssemblyName>Mercadochio</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BibliotecaControlesMercadochio">
+      <HintPath>..\..\BibliotecaControlesMercadochio\BibliotecaControlesMercadochio\bin\Debug\BibliotecaControlesMercadochio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InterfacesMercaochioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InterfacesMercaochioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormComprarOchios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormComprarOchios.Designer.cs">
+      <DependentUpon>FormComprarOchios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormConfirmarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormConfirmarPedido.Designer.cs">
+      <DependentUpon>FormConfirmarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormCuentaPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormCuentaPersona.Designer.cs">
+      <DependentUpon>FormCuentaPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormDetallesEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormDetallesEmpresa.Designer.cs">
+      <DependentUpon>FormDetallesEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormEditarCuentaPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormEditarCuentaPersona.Designer.cs">
+      <DependentUpon>FormEditarCuentaPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormIniciarSesionPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormIniciarSesionPersona.Designer.cs">
+      <DependentUpon>FormIniciarSesionPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormVerMisValoraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormVerMisValoraciones.Designer.cs">
+      <DependentUpon>FormVerMisValoraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormVerPedidosSinValorar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormVerPedidosSinValorar.Designer.cs">
+      <DependentUpon>FormVerPedidosSinValorar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormActualizarOfertaOchios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormActualizarOfertaOchios.Designer.cs">
+      <DependentUpon>FormActualizarOfertaOchios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormAniadirOchio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormAniadirOchio.Designer.cs">
+      <DependentUpon>FormAniadirOchio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormCuentaEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormCuentaEmpresa.Designer.cs">
+      <DependentUpon>FormCuentaEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormEditarDatosEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormEditarDatosEmpresa.Designer.cs">
+      <DependentUpon>FormEditarDatosEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormIniciarSesionEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormIniciarSesionEmpresa.Designer.cs">
+      <DependentUpon>FormIniciarSesionEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormMenuPrincipalPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormMenuPrincipalPersona.Designer.cs">
+      <DependentUpon>FormMenuPrincipalPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormMenuPrincipalEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormMenuPrincipalEmpresa.Designer.cs">
+      <DependentUpon>FormMenuPrincipalEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormRegistrarseEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormRegistrarseEmpresa.Designer.cs">
+      <DependentUpon>FormRegistrarseEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormRegistrarsePersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormRegistrarsePersona.Designer.cs">
+      <DependentUpon>FormRegistrarsePersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormReseniasDeEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormReseniasDeEmpresa.Designer.cs">
+      <DependentUpon>FormReseniasDeEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormSolicitudesPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormSolicitudesPedido.Designer.cs">
+      <DependentUpon>FormSolicitudesPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormularioEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormulariosEmpresa\FormularioEmpresa.Designer.cs">
+      <DependentUpon>FormularioEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioInicial.Designer.cs">
+      <DependentUpon>FormularioInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormularioPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FomulariosPersona\FormularioPersona.Designer.cs">
+      <DependentUpon>FormularioPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormComprarOchios.resx">
+      <DependentUpon>FormComprarOchios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormConfirmarPedido.resx">
+      <DependentUpon>FormConfirmarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormCuentaPersona.resx">
+      <DependentUpon>FormCuentaPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormDetallesEmpresa.resx">
+      <DependentUpon>FormDetallesEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormEditarCuentaPersona.resx">
+      <DependentUpon>FormEditarCuentaPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormIniciarSesionPersona.resx">
+      <DependentUpon>FormIniciarSesionPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormVerMisValoraciones.resx">
+      <DependentUpon>FormVerMisValoraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormVerPedidosSinValorar.resx">
+      <DependentUpon>FormVerPedidosSinValorar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormActualizarOfertaOchios.resx">
+      <DependentUpon>FormActualizarOfertaOchios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormAniadirOchio.resx">
+      <DependentUpon>FormAniadirOchio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormCuentaEmpresa.resx">
+      <DependentUpon>FormCuentaEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormEditarDatosEmpresa.resx">
+      <DependentUpon>FormEditarDatosEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormIniciarSesionEmpresa.resx">
+      <DependentUpon>FormIniciarSesionEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormMenuPrincipalPersona.resx">
+      <DependentUpon>FormMenuPrincipalPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormMenuPrincipalEmpresa.resx">
+      <DependentUpon>FormMenuPrincipalEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormRegistrarseEmpresa.resx">
+      <DependentUpon>FormRegistrarseEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormRegistrarsePersona.resx">
+      <DependentUpon>FormRegistrarsePersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormReseniasDeEmpresa.resx">
+      <DependentUpon>FormReseniasDeEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormSolicitudesPedido.resx">
+      <DependentUpon>FormSolicitudesPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormulariosEmpresa\FormularioEmpresa.resx">
+      <DependentUpon>FormularioEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioInicial.resx">
+      <DependentUpon>FormularioInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FomulariosPersona\FormularioPersona.resx">
+      <DependentUpon>FormularioPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="InterfacesMercaochioDataSet.xsc">
+      <DependentUpon>InterfacesMercaochioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InterfacesMercaochioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InterfacesMercaochioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InterfacesMercaochioDataSet.xss">
+      <DependentUpon>InterfacesMercaochioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ochos-de-sabiote.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Persona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tienda-online.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
